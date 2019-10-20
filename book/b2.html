@@ -20,17 +20,53 @@
 </head>
 
 <body>
+    <!--Info nav-->
+    <div class="navbar-container">
+
+        <a href class="navbar-item">
+            <i class="navbar-icon fas fa-mobile-alt"></i>
+            Trợ lý Kiki
+        </a>
+
+        <a href class="navbar-item">
+            <i class="navbar-icon fas fa-star"></i>
+            Ưu đãi đối tác
+        </a>
+
+        <a href class="navbar-item">
+            <i class="navbar-icon fas fa-shopping-cart"></i>
+            Săn hàng tồn
+        </a>
+
+        <a href class="navbar-item">
+            <i class="navbar-icon fas fa-tags"></i>
+            Khuyến mãi
+        </a>
+
+        <a href class="navbar-item">
+            <i class="navbar-icon fas fa-globe"></i>
+            Hàng quốc tế
+        </a>
+
+        <a href class="navbar-item">
+            <i class="navbar-icon far fa-handshake"></i>
+            Hợp tác cùng Kiki
+        </a>
+
+    </div>
+    <!--Info nav-->
+
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="../index.html">KIKI</a>
+        <a class="navbar-brand font-weight-bold" href="../index.html">KIKI</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../index.html">Trang chủ </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Giới thiệu</a>
@@ -40,6 +76,19 @@
                 </li>
 
             </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../shoppingcart.html">
+                        <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                        <span class="badge badge-danger">3</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../login.html">Đăng nhập</a>
+                </li>
+            </ul>
+
         </div>
     </nav>
     <!--/Navbar-->
@@ -49,7 +98,96 @@
         <div class="row">
             <!--Left Menu-->
             <div class="col-lg-3">
-                Menu
+                <div id="Menu">
+                    <div id="NhasachKIKI">
+                        <h3>Nhà sách KiKi</h3>
+                        <ul>
+                            <li><a href="#">English Books</a></li>
+                            <li><a href="#">Sách Tiếng Việt</a></li>
+                            <li><a href="#">Văn phòng phẩm</a></li>
+                            <li><a href="#">Quà lưu niệm</a></li>
+                        </ul>
+                    </div>
+                    <div id="Sanphamgiaotu">
+                        <h3>Sản phẩm giao từ</h3>
+                        <ul>
+                            <li><a href="#">Trong nước</a></li>
+                            <li><a href="#">Ngoài nước</a></li>
+                        </ul>
+                    </div>
+                    <div id="Congtyphathanh">
+                        <h3>Công ty phát hành</h3>
+                        <ul>
+                            <li><a href="#">Kim Đồng</a></li>
+                            <li><a href="#">Nhà xuất bản Trẻ</a></li>
+                            <li><a href="#">MCBOOKS</a></li>
+                            <li><a href="#">Alphabooks</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="Thuonghieu">
+                        <h3>Thương hiệu</h3>
+                        <ul>
+                            <li><a href="#">OEM</a></li>
+                            <li><a href="#">Deli</a></li>
+                            <li><a href="#">Thiên Long</a></li>
+                            <li><a href="#">Joy Collection</a></li>
+                            <li><a href="#">Việt Net</a></li>
+                        </ul>
+                    </div>
+                    <div id="Xuatxu">
+                        <h3>Xuất xứ</h3>
+                        <ul>
+                            <li><a href="#">Việt Nam</a></li>
+                            <li><a href="#">Trung Quốc</a></li>
+                            <li><a href="#">Đức</a></li>
+                            <li><a href="#">Pháp</a></li>
+                            <li><a href="#">Hàn Quốc</a></li>
+                        </ul>
+                    </div>
+                    <div id="Diachigiaohang">
+                        <h3>Địa chỉ giao hàng</h3>
+                        <ul>
+                            <li><a href="#">Tp.Hồ Chí Minh</a></li>
+                            <li><a href="#">Hà Nội</a></li>
+                            <li><a href="#">Cần Thơ</a></li>
+                            <li><a href="#">Đà Nẵng</a></li>
+                            <li><a href="#">Huế</a></li>
+                        </ul>
+                    </div>
+                    <div id="Tacgia">
+                        <h3>Tác giả</h3>
+                        <ul>
+                            <li><a href="#">Lê Phương Liên</a></li>
+                            <li><a href="#">Lê Thẩm Dương</a></li>
+                            <li><a href="#">J.K.Rowling</a></li>
+                            <li><a href="#">Julia Donaldson</a></li>
+                            <li><a href="#">Nhiều tác giả</a></li>
+                        </ul>
+                    </div>
+                    <div id="Dotuoi">
+                        <h3>Độ tuổi</h3>
+                        <ul>
+                            <li><a href="#">Từ 7-9 tuổi</a></li>
+                            <li><a href="#">Từ 10-15 tuổi</a></li>
+                            <li><a href="#">Từ 16-20 tuổi</a></li>
+                            <li><a href="#">Từ 21-25 tuổi</a></li>
+                            <li><a href="#">Từ 26</a></li>
+                        </ul>
+                    </div>
+                    <div id="Nhacungcap">
+                        <h3>Nhà cung cấp</h3>
+                        <ul>
+                            <li><a href="#">KIKI Trading</a></li>
+                            <li><a href="#">Nhà sách Fahasa</a></li>
+                            <li><a href="#">Joybuy Channel</a></li>
+                            <li><a href="#">Gold Books</a></li>
+                            <li><a href="#">Phương Đông Books</a></li>
+                            <li><a href="#">Luly store</a></li>
+                            <li><a href="#">Muki</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <!--/Left Menu-->
 
@@ -88,7 +226,7 @@
                         <hr>
 
                         <div class="book-price">
-                            53.100 đ
+                            53.100 đ <span class="badge badge-danger badge-pill">-23%</span>
                         </div>
 
                         <hr>
@@ -109,15 +247,68 @@
 
                                 Hiện nay có một sự hiểu nhầm đã xảy ra. Tuy Đắc Nhân Tâm là tựa sách hầu hết mọi người
                                 đều biết đến, vì những danh tiếng và mức độ phổ biến, nhưng một số người lại “ngại” đọc.
-                                Lý do vì họ tưởng đây là cuốn sách “dạy làm người” nên có tâm lý e ngại. Có lẽ là do khi
-                                giới thiệu về cuốn sách, người ta luôn gắn với miêu tả đây là “nghệ thuật đối nhân xử
-                                thế”, “nghệ thuật thu phục lòng người”… Những cụm từ này đã không còn hợp với hiện nay
-                                nữa, gây cảm giác xa lạ và không thực tế.
+                                Lý do vì họ tưởng đây là cuốn sách “dạy làm người” nên có tâm lý e ngại.
                             </p>
                         </div>
                     </div>
                     <!--Book des-->
                 </div>
+
+                <!--Recommend-->
+                <div class="row">
+
+                    <div class="prod-head">
+                        <h3>
+                            <i class="fas fa-star"></i> Đề xuất
+                        </h3>
+                    </div>
+
+                    <div class="prod-body">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../public/img/b1.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Tuổi trẻ đáng giá bao nhiêu</h5>
+                                <a href="./b1.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="../public/img/b2.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Đắc nhân tâm</h5>
+                                <a href="./b2.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="../public/img/b3.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Trên đường băng</h5>
+                                <a href="./b3.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="../public/img/b4.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Sống thực tế giữa đời thực dụng</h5>
+                                <a href="./b4.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!--Recommend-->
             </div>
             <!--/Main content-->
         </div>

@@ -15,20 +15,56 @@
     <script src="./public/js/jquery-3.3.1.slim.min.js"></script>
     <script src="./public/js/popper.min.js"></script>
     <script src="./public/js/bootstrap.min.js"></script>
-
+    <script src="./public/js/index.js"></script>
 
 </head>
 
 <body>
+    <!--Info nav-->
+    <div class="navbar-container">
+
+        <a href class="navbar-item">
+            <i class="navbar-icon fas fa-mobile-alt"></i>
+            Trợ lý Kiki
+        </a>
+
+        <a href class="navbar-item">
+            <i class="navbar-icon fas fa-star"></i>
+            Ưu đãi đối tác
+        </a>
+
+        <a href class="navbar-item">
+            <i class="navbar-icon fas fa-shopping-cart"></i>
+            Săn hàng tồn
+        </a>
+
+        <a href class="navbar-item">
+            <i class="navbar-icon fas fa-tags"></i>
+            Khuyến mãi
+        </a>
+
+        <a href class="navbar-item">
+            <i class="navbar-icon fas fa-globe"></i>
+            Hàng quốc tế
+        </a>
+
+        <a href class="navbar-item">
+            <i class="navbar-icon far fa-handshake"></i>
+            Hợp tác cùng Kiki
+        </a>
+
+    </div>
+    <!--Info nav-->
+
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="./index.html">KIKI</a>
+        <a class="navbar-brand font-weight-bold" href="./index.html">KIKI</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
                 </li>
@@ -40,6 +76,19 @@
                 </li>
 
             </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./shoppingcart.html">
+                        <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                        <span class="badge badge-danger">3</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Đăng nhập</a>
+                </li>
+            </ul>
+
         </div>
     </nav>
     <!--/Navbar-->
@@ -49,7 +98,96 @@
         <div class="row">
             <!--Left Menu-->
             <div class="col-lg-3">
-                Menu
+                <div id="Menu">
+                    <div id="NhasachKIKI">
+                        <h3>Nhà sách KiKi</h3>
+                        <ul>
+                            <li><a href="#">English Books</a></li>
+                            <li><a href="#">Sách Tiếng Việt</a></li>
+                            <li><a href="#">Văn phòng phẩm</a></li>
+                            <li><a href="#">Quà lưu niệm</a></li>
+                        </ul>
+                    </div>
+                    <div id="Sanphamgiaotu">
+                        <h3>Sản phẩm giao từ</h3>
+                        <ul>
+                            <li><a href="#">Trong nước</a></li>
+                            <li><a href="#">Ngoài nước</a></li>
+                        </ul>
+                    </div>
+                    <div id="Congtyphathanh">
+                        <h3>Công ty phát hành</h3>
+                        <ul>
+                            <li><a href="#">Kim Đồng</a></li>
+                            <li><a href="#">Nhà xuất bản Trẻ</a></li>
+                            <li><a href="#">MCBOOKS</a></li>
+                            <li><a href="#">Alphabooks</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="Thuonghieu">
+                        <h3>Thương hiệu</h3>
+                        <ul>
+                            <li><a href="#">OEM</a></li>
+                            <li><a href="#">Deli</a></li>
+                            <li><a href="#">Thiên Long</a></li>
+                            <li><a href="#">Joy Collection</a></li>
+                            <li><a href="#">Việt Net</a></li>
+                        </ul>
+                    </div>
+                    <div id="Xuatxu">
+                        <h3>Xuất xứ</h3>
+                        <ul>
+                            <li><a href="#">Việt Nam</a></li>
+                            <li><a href="#">Trung Quốc</a></li>
+                            <li><a href="#">Đức</a></li>
+                            <li><a href="#">Pháp</a></li>
+                            <li><a href="#">Hàn Quốc</a></li>
+                        </ul>
+                    </div>
+                    <div id="Diachigiaohang">
+                        <h3>Địa chỉ giao hàng</h3>
+                        <ul>
+                            <li><a href="#">Tp.Hồ Chí Minh</a></li>
+                            <li><a href="#">Hà Nội</a></li>
+                            <li><a href="#">Cần Thơ</a></li>
+                            <li><a href="#">Đà Nẵng</a></li>
+                            <li><a href="#">Huế</a></li>
+                        </ul>
+                    </div>
+                    <div id="Tacgia">
+                        <h3>Tác giả</h3>
+                        <ul>
+                            <li><a href="#">Lê Phương Liên</a></li>
+                            <li><a href="#">Lê Thẩm Dương</a></li>
+                            <li><a href="#">J.K.Rowling</a></li>
+                            <li><a href="#">Julia Donaldson</a></li>
+                            <li><a href="#">Nhiều tác giả</a></li>
+                        </ul>
+                    </div>
+                    <div id="Dotuoi">
+                        <h3>Độ tuổi</h3>
+                        <ul>
+                            <li><a href="#">Từ 7-9 tuổi</a></li>
+                            <li><a href="#">Từ 10-15 tuổi</a></li>
+                            <li><a href="#">Từ 16-20 tuổi</a></li>
+                            <li><a href="#">Từ 21-25 tuổi</a></li>
+                            <li><a href="#">Từ 26</a></li>
+                        </ul>
+                    </div>
+                    <div id="Nhacungcap">
+                        <h3>Nhà cung cấp</h3>
+                        <ul>
+                            <li><a href="#">KIKI Trading</a></li>
+                            <li><a href="#">Nhà sách Fahasa</a></li>
+                            <li><a href="#">Joybuy Channel</a></li>
+                            <li><a href="#">Gold Books</a></li>
+                            <li><a href="#">Phương Đông Books</a></li>
+                            <li><a href="#">Luly store</a></li>
+                            <li><a href="#">Muki</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <!--/Left Menu-->
 
@@ -65,9 +203,24 @@
                                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                                     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                                     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
+                                        <img src="./public/img/bg5.jpg" class="d-block w-100" alt="...">
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./public/img/bg6.jpg" class="d-block w-100" alt="...">
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./public/img/bg7.jpg" class="d-block w-100" alt="...">
+
+                                    </div>
+                                    <div class="carousel-item">
                                         <img src="./public/img/bg1.jpg" class="d-block w-100" alt="...">
 
                                     </div>
@@ -76,7 +229,7 @@
 
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="./public/img/bg3.jpg" class="d-block w-100" alt="...">
+                                        <img src="./public/img/bg4.jpg" class="d-block w-100" alt="...">
 
                                     </div>
                                 </div>
@@ -106,6 +259,12 @@
                                 <h4>Kỹ năng</h4>
                                 <div class="cate-img">
                                     <i class="fas fa-fire"></i>
+                                </div>
+                            </a>
+                            <a href="./category/chuyennganh.html" class="cate-item">
+                                <h4>Chuyên ngành</h4>
+                                <div class="cate-img">
+                                    <i class="fas fa-cogs"></i>
                                 </div>
                             </a>
                             <a href="./category/ngoaingu.html" class="cate-item">
@@ -145,7 +304,7 @@
                         </h3>
                     </div>
 
-                    <div class="prod-body">
+                    <div class="prod-body" id="hot">
                         <div class="card" style="width: 18rem;">
                             <img src="./public/img/b1.jpg" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -155,6 +314,57 @@
                                     Mua</a>
                             </div>
                         </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./public/img/b5.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Code dạo ký sự</h5>
+                                <a href="./book/b5.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./public/img/b8.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Toán Học, Một Thiên Tiểu Thuyết</h5>
+                                <a href="./book/b8.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./public/img/b9.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Sapiens: A Brief History of Humankind</h5>
+                                <a href="./book/b9.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./public/img/b6.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Các thế giới song song</h5>
+                                <a href="./book/b6.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./public/img/b7.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Mật mã</h5>
+                                <a href="./book/b7.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+
 
                         <div class="card" style="width: 18rem;">
                             <img src="./public/img/b2.jpg" class="card-img-top" alt="..." />
@@ -186,6 +396,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="paginate-wrap paginate" books="hot" num="4"></div>
 
                 </div>
 
@@ -197,7 +409,17 @@
                         </h3>
                     </div>
 
-                    <div class="prod-body">
+                    <div class="prod-body" id="new">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./public/img/b7.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Mật mã</h5>
+                                <a href="./book/b7.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+
                         <div class="card" style="width: 18rem;">
                             <img src="./public/img/b1.jpg" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -207,6 +429,51 @@
                                     Mua</a>
                             </div>
                         </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./public/img/b4.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Sống thực tế giữa đời thực dụng</h5>
+                                <a href="./book/b4.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./public/img/b5.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Code dạo ký sự</h5>
+                                <a href="./book/b5.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./public/img/b8.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Toán Học, Một Thiên Tiểu Thuyết</h5>
+                                <a href="./book/b8.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./public/img/b6.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Các thế giới song song</h5>
+                                <a href="./book/b6.html" class="btn btn-secondary btn-block"><i
+                                        class="fas fa-shopping-cart"></i>
+                                    Mua</a>
+                            </div>
+                        </div>
+
+
+
 
                         <div class="card" style="width: 18rem;">
                             <img src="./public/img/b2.jpg" class="card-img-top" alt="..." />
@@ -228,15 +495,11 @@
                             </div>
                         </div>
 
-                        <div class="card" style="width: 18rem;">
-                            <img src="./public/img/b4.jpg" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Sống thực tế giữa đời thực dụng</h5>
-                                <a href="./book/b4.html" class="btn btn-secondary btn-block"><i
-                                        class="fas fa-shopping-cart"></i>
-                                    Mua</a>
-                            </div>
-                        </div>
+
+                    </div>
+
+                    <div class="paginate-wrap paginate" books="new" num="8">
+
                     </div>
 
                 </div>
@@ -249,14 +512,15 @@
                             <i class="fas fa-newspaper"></i> Đăng ký nhận bảng tin
                         </h2>
                     </div>
-                    <div class="input-group flex-nowrap">
+                    <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="addon-wrapping">@</span>
                         </div>
                         <input type="text" class="form-control" placeholder="Nhập email tại đây..."
                             aria-label="Username" aria-describedby="addon-wrapping">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Đăng ký</button>
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Đăng
+                                ký</button>
                         </div>
                     </div>
                 </div>
@@ -267,7 +531,7 @@
 
 
     </div>
-
+    </div>
     <!--Footer-->
 
     <nav class="navbar  navbar-dark bg-dark">
