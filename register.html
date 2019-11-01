@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Đăng ký</title>
+	<link rel="stylesheet" href="public/css/register.css">
+	<link rel="stylesheet" href="public/fontawesome/css/all.css">
+	<script src="public/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="public/js/register.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="header">
+			Tạo tài khoản
+		</div>
+
+		<!-- Register form -->
+		<form id="registerForm" method="post" action="index.html" class="form-box">
+			<!-- Full name  -->
+			<div id="fullname" class="form-line">
+
+				<input id="fullnameInput" type="text" placeholder="Nhập họ tên">
+
+				<!-- Full name empty -->
+				<div id="fullnameEmpty" class="form-error">
+					<i class="fas fa-exclamation-circle"></i>
+					Vui lòng nhập họ tên.
+				</div>
+				<!-- /Full name empty -->
+
+			</div>
+			<!-- /Full name  -->
+
+			<!-- Email  -->
+			<div id="email" class="form-line">
+
+				<input id="emailInput" type="text" placeholder="Nhập email">
+				<!-- Email empty -->
+				<div id="emailEmpty" class="form-error">
+					<i class="fas fa-exclamation-circle"></i>
+					Vui lòng nhập email.
+				</div>
+				<!-- /Email empty -->
+
+				<!-- Email invalid -->
+				<div id="emailInvalid" class="form-error">
+					<i class="fas fa-exclamation-circle"></i>
+					Email không hợp lệ.
+				</div>
+				<!-- /Email invalid -->
+
+			</div>
+			<!-- /Email  -->
+
+			<!-- Phone -->
+			<div id="phone" class="form-line">
+
+				<!-- Input and send SMS -->
+				<div style="display: flex">
+
+					<input id="phoneInput" type="text" placeholder="Nhập số điện thoại">
+
+					<div class="sendSMS">
+						Gửi mã xác thực
+					</div>
+
+				</div>
+				<!-- /Input and send SMS -->
+
+				<!-- Phone empty -->
+				<div id="phoneEmpty" class="form-error">
+					<i class="fas fa-exclamation-circle"></i>
+					Vui lòng nhập số điện thoại.
+				</div>
+				<!-- /Phone empty -->
+
+				<div id="phoneInvalid" class="form-error">
+					<i class="fas fa-exclamation-circle"></i>
+					Số điện thoại không hợp lệ.
+				</div>
+			</div>
+			<!-- /Phone -->
+
+			<!-- Password  -->
+			<div id="password" class="form-line">
+
+				<input id="passwordInput" type="password" placeholder="Nhập mật khẩu (6 - 32 kí tự)">
+
+				<!-- Password empty -->
+				<div id="passwordEmpty" class="form-error">
+					<i class="fas fa-exclamation-circle"></i>
+					Vui lòng nhập mật khẩu.
+				</div>
+				<!-- /Password empty -->
+
+				<!-- Password invalid -->
+				<div id="passwordInvalid" class="form-error">
+					<i class="fas fa-exclamation-circle"></i>
+					Mật khẩu có độ dài từ 6 đến 32 kí tự và phải chứa ít nhất một chữ thường, một chữ in hoa và một chữ số.
+				</div>
+				<!-- /Password invalid -->
+
+			</div>
+			<!-- /Password  -->
+
+			<!-- Gender -->
+			<div class ="option-block">
+
+				<!-- Select options line -->
+				<div class="option-line">
+
+					<label class="line-label">
+						Giới tính:
+					</label>
+
+					<!-- Male radio -->
+					<div class="genderOption">
+						<input id="male" type="radio" name="genderOption">
+						<label for="male">Nam</label>
+						<span></span>
+					</div>
+					<!-- /Male radio -->
+
+					<!-- Female radio -->
+					<div class="genderOption">
+						<input id="female" type="radio" name="genderOption">
+						<label for="female">Nữ</label>
+						<span></span>
+					</div>
+					<!-- /Female radio -->
+
+				</div>
+				<!-- /Select options line -->
+
+				<!-- Gender empty -->
+				<div id="genderEmpty" class="form-error">
+					<i class="fas fa-exclamation-circle"></i>
+					Vui lòng chọn giới tính.
+				</div>
+				<!-- /Gender error -->
+
+			</div>
+			<!-- /Gender -->
+
+			<!-- Date of birth -->
+			<div class="option-block">
+
+				<!-- Select options line -->
+				<div class="option-line">
+
+					<label class="line-label">
+						Ngày sinh:
+					</label>
+
+					<!-- Select day -->
+					<div id="day" class="custom-container">
+						<label class="custom-select">
+							<input class="custom-input" type="text" placeholder="Ngày">
+							<i class="custom-button fas fa-chevron-circle-down"></i>
+						</label>
+						<div class="custom-list">
+							<div class="empty-option">Trống</div>
+							<div class="custom-option">1</div>
+						</div>
+					</div>
+					<!-- /Select day -->
+
+					<!-- Select month -->
+					<div id="month" class="custom-container">
+						<label class="custom-select">
+							<input class="custom-input" type="text" placeholder="Tháng">
+							<i class="custom-button fas fa-chevron-circle-down"></i>
+						</label>
+						<div class="custom-list">
+							<div class="empty-option">Trống</div>
+							<div class="custom-option">1</div>
+						</div>
+					</div>
+					<!-- /Select month -->
+
+					<!-- Select year -->
+					<div id="year" class="custom-container">
+						<label class="custom-select">
+							<input class="custom-input" type="text" placeholder="Năm">
+							<i class="custom-button fas fa-chevron-circle-down"></i>
+						</label>
+						<div class="custom-list">
+							<div class="empty-option">Trống</div>
+							<div class="custom-option">1900</div>
+						</div>
+					</div>
+					<!-- /Select year -->
+
+				</div>
+				<!-- /Select options line -->
+
+				<!-- Date of birth empty -->
+				<div id="dobEmpty" class="form-error">
+					<i class="fas fa-exclamation-circle"></i>
+					Vui lòng chọn ngày sinh.
+				</div>
+				<!-- /Date of birth empty -->
+
+			</div>
+			<!-- /Date of birth -->
+
+			<!-- Submit button -->
+			<input type="submit" id="submit" class="submit-button" value="Đăng ký">
+			<!-- /Submit button -->
+
+			<!-- Policy agreement -->
+			<div class="policyAgreement">
+				<div class="policyText">
+					Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo 
+				</div>
+				<a class="policyLink" href="">điều kiện sử dụng và chính sách của Kiki.</a>
+			</div>
+			<!-- /Policy agreement -->
+
+		</form>
+		<!-- /Register form -->
+	</div>
+
+	
+	
+
+</body>
+
+</html>
