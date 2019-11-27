@@ -1,0 +1,27 @@
+body{
+		background-image: url('../img/login.jpg');
+		background-position: center;
+		background-size: cover;
+		margin: 0;		
+	}
+table{
+		background:#1C1C1C;
+		border: 0px solid black;
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		text-align: center;
+		border-color: none;
+		padding: 5px;
+	}
+input{
+		height: 40px;
+		width: 380px;
+	}
+a{
+		text-decoration:none;
+	}
+b{
+	color: white;
+}
